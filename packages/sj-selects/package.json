@@ -9,7 +9,7 @@
     ],
     "scripts": {
         "build": "npm run clean && webpack --mode production --config webpack.config.js",
-        "release": "npx semantic-release --repository-url https://github.com/VladBoyko11/my-monorepo --no-ci",
+        "release": "npx semantic-release --repository-url https://github.com/VladBoyko11/my-monorepo",
         "lint": "eslint --cache src/*",
         "lint:fix": "eslint . --fix",
         "test": "jest",
