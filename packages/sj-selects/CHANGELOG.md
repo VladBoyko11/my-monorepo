@@ -1,3 +1,10 @@
+# [example-module-v0.4.0](https://github.com/VladBoyko11/my-monorepo/compare/example-module-v0.3.0...example-module-v0.4.0) (2024-03-02)
+
+
+### Features
+
+* some feat ([627411d](https://github.com/VladBoyko11/my-monorepo/commit/627411d4f3f553dd553f3e5eea6e7bcfd2758586))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
