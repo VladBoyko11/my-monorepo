@@ -1,0 +1,53 @@
+image: node:18-alpine
+
+definitions:
+  steps:
+    - step: &InstallDependencies
+        name: Install dependencies
+        caches:
+          - node
+        script:
+          - printf "//registry.npmjs.org/:_authToken=$NPM_TOKEN\n" >> .npmrc
+          - yarn --frozen-lockfile
+
+    - step: &Linter
+        name: Code linting
+        caches:
+          - node
+        script:
+          - npx turbo run lint
+
+    - step: &Test
+        name: Run tests
+        caches:
+          - node
+        script:
+          - npx turbo run test
+
+    - step: &ScanCompassMetrics
+        name: Scan compass metrics
+        script:
+          - eval $DOCKER_LOGIN
+          - pipe: docker://saasjet/compass-metric-pipe:latest
+            variables:
+              REPOSITORY_NAME: $BITBUCKET_REPO_SLUG
+              COMPASS_API_TOKEN: $COMPASS_API_TOKEN
+              NPM_TOKEN: $NPM_TOKEN
+
+pipelines:
+  pull-requests:
+    '**':
+      - step: *InstallDependencies
+      - parallel:
+          - step: *Linter
+          - step: *Test
+  branches:
+    master:
+      - step:
+          name: Release
+          script:
+            - printf "//registry.npmjs.org/:_authToken=$NPM_TOKEN\n" >> .npmrc
+            - yarn install
+            - git fetch --tags
+            - yarn release
+      - step: *ScanCompassMetrics

@@ -1,0 +1,10 @@
+{
+  "name": "@configs/jest",
+  "version": "1.0.0",
+  "private": true,
+  "main": "config.js",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "@types/jest": "^27.0.2"
+  }
+}

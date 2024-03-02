@@ -1,0 +1,17 @@
+name: sj-selects
+id: 'ari:cloud:compass:0753ecf1-55e9-4264-93d9-d003b23d2245:component/3451301d-002e-4a73-816c-055f324bf00b/f8aeb6d2-dae5-430d-bbae-786c54aabc3d'
+configVersion: 1
+typeId: UI_ELEMENT
+ownerId: 'ari:cloud:teams::team/02541f10-a4ba-4bb8-9d0c-5a3563f31760'
+fields:
+  tier: 4
+  lifecycle: Active
+links:
+  - name: Discord
+    type: CHAT_CHANNEL
+    url: https://discord.com/channels/619923727194390539/892037756107227208
+  - name: Jira project
+    type: PROJECT
+    url: https://saasjet.atlassian.net/jira/software/c/projects/INTD/issues
+labels:
+  - bitbucket-import

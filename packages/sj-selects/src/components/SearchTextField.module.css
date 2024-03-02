@@ -1,0 +1,10 @@
+[data-testid="search-borderless-input-container"] {
+    border: none !important;
+    height: 52px !important;
+    max-height: 32px !important;
+    background-color: white !important;
+    padding: 4px 8px 4px 16px !important;
+}
+[data-testid="search-borderless-input"] {
+    padding: 0 !important;
+}

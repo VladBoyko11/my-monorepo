@@ -1,0 +1,18 @@
+.optionIcon {
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
+    pointer-events: none;
+}
+.highlightingBgColor {
+    background: #FFE380;
+}
+.highlightWarningBlock {
+    outline: 2px solid #D97008;
+    background-color: #FFF7D6;
+    border-radius: 3px;
+}
+div[class*="-control"] {
+    border-color: transparent;
+    background-color: #FFF7D6;
+}

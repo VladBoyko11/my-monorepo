@@ -1,0 +1,22 @@
+{
+    "extends": "@configs/ts/base",
+    "compilerOptions": {
+        "paths": {
+            "@SJTypes": [
+                "./src/types/types.d.ts"
+            ]
+        },
+        "outDir": "./dist",
+        "jsx": "react",
+        "esModuleInterop": true
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+    "include": [
+        "./src/**/*.tsx",
+        ".d.ts",
+        "./src/types/*.d.ts"
+    ]
+}
