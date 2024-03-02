@@ -1,3 +1,10 @@
+# [example-module-v0.5.0](https://github.com/VladBoyko11/my-monorepo/compare/example-module-v0.4.0...example-module-v0.5.0) (2024-03-02)
+
+
+### Features
+
+* some feat ([a2b64f5](https://github.com/VladBoyko11/my-monorepo/commit/a2b64f593e09d0c7da39e1b5ca1b6e3b20f75648))
+
 # [example-module-v0.4.0](https://github.com/VladBoyko11/my-monorepo/compare/example-module-v0.3.0...example-module-v0.4.0) (2024-03-02)
 
 
