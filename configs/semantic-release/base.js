@@ -1,7 +1,7 @@
 module.exports = {
   extends: 'semantic-release-monorepo',
   branches: ['main'],
-  repositoryUrl: 'https://github.com/VladBoyko11/example-monorepo',
+  repositoryUrl: 'https://github.com/VladBoyko11/my-monorepo',
   initialVersion: '0.3.0',
   plugins: [
     '@semantic-release/commit-analyzer',

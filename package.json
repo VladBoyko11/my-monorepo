@@ -8,7 +8,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/VladBoyko11/example-monorepo"
+    "url": "https://github.com/VladBoyko11/my-monorepo"
   },
   "engines": {
     "node": ">=18",
