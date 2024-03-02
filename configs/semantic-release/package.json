@@ -2,7 +2,6 @@
   "name": "@configs/semantic-release",
   "version": "1.0.0",
   "private": true,
-  "repository": "https://github.com/VladBoyko11/example-monorepo",
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^9.0.0",
